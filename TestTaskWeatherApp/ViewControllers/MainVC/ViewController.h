@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableViewCell.h"
+#import "DetailWeatherVC.h"
+#import "ServerManager.h"
+#import "AppDelegate.h"
+#import "AddNewCityVC.h"
+
 
 @interface ViewController : UIViewController
 
+- (BOOL)isHaveObj:(CityInfo *)obj;
+- (void)insertNewObject: (CityInfo *)model;
 
 @end
 
